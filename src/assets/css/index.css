@@ -1,0 +1,43 @@
+.excelsty {
+  position: relative;
+  width: 100%;
+  height: 600%;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.mousesty {
+  border: 1px solid #436cdf;
+  background-color: rgba(79, 149, 255, 0.548);
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.lay_height {
+  height: 100vh;
+}
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.trigger:hover {
+  color: #1890ff;
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.con_sty {
+  height: 100%;
+}
+.tags_sty {
+  width: 100%;
+}

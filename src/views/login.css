@@ -1,0 +1,8 @@
+.login_sty {
+  display: flex;
+  justify-content: center;
+}
+.login_sty > div {
+  margin-top: 100px;
+  width: 500px;
+}
