@@ -24,6 +24,7 @@ const Tags = (props: any) => {
   };
   useEffect(() => {
     getTaginfo()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   const getTaginfo = () => {
     // 渲染页面标签

@@ -1,8 +1,8 @@
 
 import Main from '../views/Main'
-import Lineinfo from '../views/sitemanage/lineInfo'
-import Selectinput from '../views/sitemanage/siteInfo'
-import Demo3 from '../views/sitemanage/Demo3'
+import Lineinfo from '../views/sitemanage/line/lineInfo'
+import Selectinput from '../views/sitemanage/site/siteInfo'
+import Demo3 from '../views/sitemanage/demo/Demo3'
 
 export const routes = [
   {path: '/main', component: Main},

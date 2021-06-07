@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import { Table } from 'antd'
 
 const Tabledemo = (val: any) => {
+  console.log(val)
   const { columns } = val
   const [data, setData] = useState<any[]>([])
   useEffect(() => {
