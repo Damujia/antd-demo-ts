@@ -1,5 +1,6 @@
 import { Form, Input, Button } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom'
+import './login.css'
 
 interface Ilogin extends RouteComponentProps {
   setUserinfo: any
@@ -14,7 +15,6 @@ const tailLayout = {
 };
 
 const Login = (props: Ilogin) => {
-  console.log(props)
 
   const [form] = Form.useForm();
 
@@ -38,25 +38,27 @@ const Login = (props: Ilogin) => {
   };
 
   return (
-    <Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
-      <Form.Item name="workerNo" label="账号" rules={[{ required: true }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item name="psw" label="密码" rules={[{ required: true }]}>
-        <Input />
-      </Form.Item>
-      <Form.Item {...tailLayout}>
-        <Button type="primary" htmlType="submit">
-          登录
-        </Button>
-        <Button htmlType="button" onClick={onReset}>
-          重置
-        </Button>
-        <Button type="link" htmlType="button" onClick={onFill}>
-          填充
-        </Button>
-      </Form.Item>
-    </Form>
+    <div className="login_sty">
+      <Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
+        <Form.Item name="workerNo" label="账号" rules={[{ required: true }]}>
+          <Input />
+        </Form.Item>
+        <Form.Item name="psw" label="密码" rules={[{ required: true }]}>
+          <Input />
+        </Form.Item>
+        <Form.Item {...tailLayout}>
+          <Button type="primary" htmlType="submit">
+            登录
+          </Button>
+          <Button htmlType="button" onClick={onReset}>
+            重置
+          </Button>
+          <Button type="link" htmlType="button" onClick={onFill}>
+            填充
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
   );
 };
 
