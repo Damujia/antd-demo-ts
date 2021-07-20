@@ -7,13 +7,14 @@ const { Content } = Layout
 class Contentdemo extends React.Component {
   render() {
     return (
-      <TransitionGroup>
-        <CSSTransition classNames="fade" timeout={500}>
+      <TransitionGroup style={{height: '100%', overflow: 'auto'}}>
+        <CSSTransition classNames="fade" timeout={1000}>
           <Content
             className="site-layout-background"
             style={{
               margin: '24px 16px',
               padding: 24,
+              boxSizing: 'border-box'
             }}
           >
             {/* 渲染与路径匹配的<Route> */}

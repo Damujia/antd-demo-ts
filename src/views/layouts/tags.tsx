@@ -70,7 +70,7 @@ const Tags = (props: any) => {
                   <span>{e.authName}</span>
                   <em onClick={event => removetag(event, e.path)}>
                     &times;
-                    </em>
+                  </em>
                 </li>
               ))
             }

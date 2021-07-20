@@ -16,6 +16,7 @@
 }
 .lay_height {
   height: 100vh;
+  overflow-y: none;
 }
 .trigger {
   font-size: 18px;

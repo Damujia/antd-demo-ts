@@ -1,5 +1,7 @@
 import React from 'react'
-const Main = () => (
-  <div>首页</div>
-)
+const Main = (props: any) => {
+  return (
+    <div>首页</div>
+  )
+}
 export default Main
